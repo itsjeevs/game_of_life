@@ -65,7 +65,8 @@ def testWorld():
     main.set_alive(10, 12)
     assert main.next_state_is_alive(11, 11) == False
 
-
+    main.reset_game()
+    main.play([(1,1), (1,3), (2, 3), (2,4), (4,4)])
 
 
 
